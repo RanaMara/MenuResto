@@ -1,0 +1,183 @@
+@import "./\ variables";
+
+.menuName{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        display: inline;
+        font-size: 20px;
+        line-height: 20px;
+        color: black;
+        text-align: center;
+    }
+}
+.menuContent{
+    width: 100%;
+    height: 75%;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5em;
+        h1{
+            display: block;
+            color: $menu4-color-text;
+            font-size: 2.5em;
+            line-height: 2rem;
+            font-weight: lighter;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .menuSections{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+       margin: 1% auto;
+
+        // overflow: scroll;
+        .menuSection{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5em;
+            line-height: 1rem;
+            .category{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-direction: row; 
+                margin-bottom: 1em;
+                justify-content: space-between;
+                img{
+                    width: 35%;
+                }
+                span{
+                    width: 30%;
+                    text-align: center;
+                }
+
+            }
+            
+            .meals{
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                line-height: 3rem;
+                .meal{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+
+            }
+        }
+    }
+    .menuNameBottom{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            padding-left: 1%;
+        }
+       
+    }
+}
+
+.menuContent1{
+    i{
+        color: #ee5860 ;  
+        justify-content: center;
+        font-size: 38px;
+    }
+    @extend .menuContent;
+    background-color: $menu1-background;
+    color : $menu1-color-text;
+    .title{
+        h1{
+            color: $menu1-color-text;
+        }
+    }
+    .menuSections{
+        color: $menu1-color-text;
+    }
+}
+
+.menuContent2{
+    @extend .menuContent;
+    background-color: $menu2-background;
+    color : $menu2-color-text;
+    .title{
+        h1{
+            color: $menu2-color-text;
+        }
+    }
+    .menuSections{
+        color: $menu2-color-text;
+        .menuSection:nth-child(1){
+            color: $menu2-color-text;
+        }
+        .menuSection:nth-child(2){
+            color: #a56799;
+        }
+        .menuSection:nth-child(3){
+            color: #6e4ccc;
+        }
+    }
+    
+}
+
+.menuContent3{
+    @extend .menuContent;
+    background-color: $menu3-background;
+    color : $menu3-color-text;
+    .title{
+        h1{
+            color: $menu3-color-text;
+        }
+    }
+    .menuSections{
+        color: #000000;
+    }
+}
+
+.menuContent4{
+    @extend .menuContent;
+    background-color: $menu4-background;
+    color : $menu4-color-text;
+    .title{
+        h1{
+            color: $menu4-color-text;
+            background: linear-gradient(to right, #489b40,#8ad362,#bbf67e);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            text-shadow: 0 0 2px ,rgba(0,0,0,0.5);
+        }
+    }
+    .menuSections{
+        color: #000000;
+    }
+}
+
+
