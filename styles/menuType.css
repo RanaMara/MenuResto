@@ -1,0 +1,364 @@
+.mainMenu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 85%;
+  overflow-y: scroll;
+  padding: 2.5% 0;
+}
+
+.mainMenu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainMenu .container .menuName {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3%;
+}
+
+.mainMenu .container .menuName h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: inline;
+  line-height: 20px;
+  color: black;
+  text-align: center;
+}
+
+.mainMenu .container .menuContent, .mainMenu .container .menuContent1, .mainMenu .container .menuContent2, .mainMenu .container .menuContent3, .mainMenu .container .menuContent4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5%;
+}
+
+.mainMenu .container .menuContent .title, .mainMenu .container .menuContent1 .title, .mainMenu .container .menuContent2 .title, .mainMenu .container .menuContent3 .title, .mainMenu .container .menuContent4 .title {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.mainMenu .container .menuContent .title h1, .mainMenu .container .menuContent1 .title h1, .mainMenu .container .menuContent2 .title h1, .mainMenu .container .menuContent3 .title h1, .mainMenu .container .menuContent4 .title h1 {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 0rem;
+  font-weight: normal;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.mainMenu .container .menuContent .menuSections, .mainMenu .container .menuContent1 .menuSections, .mainMenu .container .menuContent2 .menuSections, .mainMenu .container .menuContent3 .menuSections, .mainMenu .container .menuContent4 .menuSections {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+  padding-bottom: 0;
+  margin: 1% auto;
+  margin-bottom: 0;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection, .mainMenu .container .menuContent1 .menuSections .menuSection, .mainMenu .container .menuContent2 .menuSections .menuSection, .mainMenu .container .menuContent3 .menuSections .menuSection, .mainMenu .container .menuContent4 .menuSections .menuSection {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+  line-height: 1rem;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category, .mainMenu .container .menuContent1 .menuSections .menuSection .category, .mainMenu .container .menuContent2 .menuSections .menuSection .category, .mainMenu .container .menuContent3 .menuSections .menuSection .category, .mainMenu .container .menuContent4 .menuSections .menuSection .category {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category img, .mainMenu .container .menuContent1 .menuSections .menuSection .category img, .mainMenu .container .menuContent2 .menuSections .menuSection .category img, .mainMenu .container .menuContent3 .menuSections .menuSection .category img, .mainMenu .container .menuContent4 .menuSections .menuSection .category img {
+  width: 25vw;
+  height: 1vw;
+  margin: auto;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category .rightLine, .mainMenu .container .menuContent1 .menuSections .menuSection .category .rightLine, .mainMenu .container .menuContent2 .menuSections .menuSection .category .rightLine, .mainMenu .container .menuContent3 .menuSections .menuSection .category .rightLine, .mainMenu .container .menuContent4 .menuSections .menuSection .category .rightLine {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 25vw;
+  height: 1vw;
+  margin: auto;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category span, .mainMenu .container .menuContent1 .menuSections .menuSection .category span, .mainMenu .container .menuContent2 .menuSections .menuSection .category span, .mainMenu .container .menuContent3 .menuSections .menuSection .category span, .mainMenu .container .menuContent4 .menuSections .menuSection .category span {
+  text-align: center;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .meals, .mainMenu .container .menuContent1 .menuSections .menuSection .meals, .mainMenu .container .menuContent2 .menuSections .menuSection .meals, .mainMenu .container .menuContent3 .menuSections .menuSection .meals, .mainMenu .container .menuContent4 .menuSections .menuSection .meals {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3rem;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent1 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent2 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent3 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent4 .menuSections .menuSection .meals .meal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1em;
+}
+
+.mainMenu .container .menuContent .menuNameBottom, .mainMenu .container .menuContent1 .menuNameBottom, .mainMenu .container .menuContent2 .menuNameBottom, .mainMenu .container .menuContent3 .menuNameBottom, .mainMenu .container .menuContent4 .menuNameBottom {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainMenu .container .menuContent .menuNameBottom h2, .mainMenu .container .menuContent1 .menuNameBottom h2, .mainMenu .container .menuContent2 .menuNameBottom h2, .mainMenu .container .menuContent3 .menuNameBottom h2, .mainMenu .container .menuContent4 .menuNameBottom h2 {
+  padding-left: 1%;
+}
+
+.menuContent1 {
+  background-color: #fadfdb;
+  color: #3c1218;
+}
+
+.menuContent1 i {
+  color: #ee5860;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4em;
+  margin-top: 1rem;
+}
+
+.menuContent1 i:before {
+  background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuContent1 .title h1 {
+  color: #3c1218;
+  font-family: "Devonshire", cursive;
+  margin-top: 1em;
+}
+
+.menuContent1 .menuSections {
+  color: #3c1218;
+}
+
+.menuContent1 .menuSections .menuSection {
+  font-family: "Courgette", cursive;
+}
+
+.menuContent1 .menuSections .menuSection .category span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menuContent2 {
+  background-color: #fdf5fe;
+  color: #c77430;
+}
+
+.menuContent2 .title {
+  font-family: "Croissant One", cursive;
+  background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuContent2 .title h1 {
+  margin-top: 2em;
+}
+
+.menuContent2 .menuSections {
+  font-family: 'Courgette', cursive;
+  color: #c77430;
+}
+
+.menuContent2 .menuSections .menuSection:nth-child(1) {
+  color: #c77430;
+}
+
+.menuContent2 .menuSections .menuSection:nth-child(2) {
+  color: #a56799;
+}
+
+.menuContent2 .menuSections .menuSection:nth-child(3) {
+  color: #6e4ccc;
+}
+
+.menuContent3 {
+  background-color: #f9f9f9;
+  color: #2386f6;
+}
+
+.menuContent3 .title {
+  font-family: "Alex Brush", cursive;
+  background: -webkit-linear-gradient(360deg, #0e0eac, #67aef1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuContent3 .title h1 {
+  margin-top: 2em;
+}
+
+.menuContent3 .menuSections {
+  font-family: 'Courgette', cursive;
+  color: #000000;
+}
+
+.menuContent4 {
+  background-color: #fdfffd;
+  color: #72bf56;
+}
+
+.menuContent4 .title {
+  font-family: "Kaushan Script", cursive;
+  background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuContent4 .title h1 {
+  margin-top: 2em;
+}
+
+.menuContent4 .menuSections {
+  color: #000000;
+  font-family: 'Courgette', cursive;
+}
+
+/* On the screens, when the window width is at most 768px for the smartphone */
+@media screen and (min-width: 100px) and (max-width: 767px) {
+  .mainMenu {
+    padding: 5% 0;
+  }
+  .mainMenu .container {
+    padding: 0 5%;
+  }
+  .mainMenu .container .menuName h3 {
+    font-size: 1.2rem;
+  }
+  .mainMenu .container .menuContent .title, .mainMenu .container .menuContent1 .title, .mainMenu .container .menuContent2 .title, .mainMenu .container .menuContent3 .title, .mainMenu .container .menuContent4 .title {
+    margin-bottom: 1em;
+  }
+  .mainMenu .container .menuContent .title h1, .mainMenu .container .menuContent1 .title h1, .mainMenu .container .menuContent2 .title h1, .mainMenu .container .menuContent3 .title h1, .mainMenu .container .menuContent4 .title h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+  }
+  .mainMenu .container .menuContent .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent1 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent2 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent3 .menuSections .menuSection .meals .meal, .mainMenu .container .menuContent4 .menuSections .menuSection .meals .meal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainMenu .container .menuContent .menuSections .menuSection .meals .meal span, .mainMenu .container .menuContent1 .menuSections .menuSection .meals .meal span, .mainMenu .container .menuContent2 .menuSections .menuSection .meals .meal span, .mainMenu .container .menuContent3 .menuSections .menuSection .meals .meal span, .mainMenu .container .menuContent4 .menuSections .menuSection .meals .meal span {
+    text-align: center;
+  }
+  .mainMenu .container .menuContent .menuNameBottom, .mainMenu .container .menuContent1 .menuNameBottom, .mainMenu .container .menuContent2 .menuNameBottom, .mainMenu .container .menuContent3 .menuNameBottom, .mainMenu .container .menuContent4 .menuNameBottom {
+    margin-left: 2%;
+  }
+}
+
+/* On the screens, when the window width is between 769px and at most 991px for the tablet */
+/*# sourceMappingURL=menuType.css.map */

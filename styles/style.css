@@ -279,6 +279,9 @@ body #app footer .container div a {
     font-size: 2em;
     line-height: 1.6em;
   }
+  body #app main .container {
+    padding: 0 5%;
+  }
   body #app main .container .menus {
     margin-left: 0;
     -webkit-box-orient: vertical;

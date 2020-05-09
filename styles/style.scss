@@ -1,7 +1,15 @@
-@import "./variables";
-@import "./header";
-@import "./footer";
-@import "./munuType";
+$primary-color : #579c86;
+$secondary-color : #f9cb47;
+$menu1-background :#fadfdb;
+$menu1-color-text : #3c1218;
+$menu2-background : #fdf5fe;
+$menu2-color-text : #c77430;
+$menu3-background : #f9f9f9;
+$menu3-color-text : #2386f6;
+$menu4-background : #fdfffd;
+$menu4-color-text : #72bf56;
+
+/* CSS for the home page */
 
 *{
     box-sizing: border-box;
@@ -23,13 +31,39 @@ body{
         flex-direction: column;
         width: 100%;
         height: 100%;
-
-
+/*    HEADER  */
+        header{
+            background-color: $primary-color ;
+            height: 10%;
+            .container{
+                width: 100%;
+                height: 100%;
+                section{
+                    display: flex;
+                    align-items: center;
+                    margin: 1% auto;
+                    justify-content: center;
+                        
+                        a{
+                            color: $secondary-color;
+                            text-decoration: none;
+                            h1{
+                                letter-spacing: -3px;
+                                line-height: 1em;
+                                font-weight: 500;
+                                font-size: 2.8em;
+                                font-family: "Roboto", sans-serif;}
+                        }
+                    
+                }
+            }
+        }
+/*          MAIN      */
         main{
             flex-grow:1;
             max-height: 85%;
-            overflow: scroll;
-            padding: 2.5% 0;;
+            overflow-y: scroll;
+            padding: 2.5% 0;
             section{
                 display: flex;
                 flex-direction: column;
@@ -40,85 +74,265 @@ body{
                 .menus{
                     display: flex;
                     flex-wrap: wrap;
-                    height: 100%;
+                    // height: 95%;
                     width: 100%;
+                    margin-left: 24%;
                     .menu{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         border:4px solid #ededed;
-                        width: 45%;
-                        height: 45%;
+                        text-decoration: none;
+                        width: 35%;
+                        height: 35em;
                         // padding: 2.5% 0;
                         margin: 1em;
+                        
                         // border: 1px solid black;
                         text-align: center;
                         line-height: 30px;
                         i{
-                            color: #ee5860 ;  
+                            font-size: 4em;
+                            &:before {
+                                background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; 
+                        }}
+                        a{
+                            text-decoration: none;
                         }
-                        h2{
-                            size:9px;
-                        }
-                        
                     }
                     .menu:nth-child(1){
                         background-color: $menu1-background;
                         color: $menu1-color-text ;
-                        a{
-                            text-decoration: none;
+                        h2{
+                            font-family: "Devonshire", normal;
+                            font-size: 1.6rem;
                             color: $menu1-color-text ;
+                        }
+                        h1{
+                            font-family: "Kalam", cursive;
+                            padding-top: 2vh;
+                            font-size: 2rem !important;
                         }
                     }
                     .menu:nth-child(2){
                         background-color: $menu2-background;
                         color: $menu2-color-text ;
-                        a{
-                            text-decoration: none;
+                        h2{
+                            font-family: "Croissant One", cursive;
+                            font-size: 1.3rem;
+                            background: -webkit-linear-gradient(0deg, #cc6410, #a45be9, #905BFD);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        h1{
+                            font-family: 'Times New Roman', Times, serif;
                             color: $menu2-color-text ;
+                            padding-top: 2vh;
+                            font-size: 2rem;
                         }
                     }
                     .menu:nth-child(3){
                         background-color: $menu3-background;
                         color: $menu3-color-text ;
-                        a{
-                            text-decoration: none;
+                        h2{
+                            font-family: "Alex Brush", cursive;
+                            background: -webkit-linear-gradient(360deg, #153fdf, #0b6cf2, #2c8df6);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 1.8rem;
+                        }
+                        h1{
+                            font-family: "Kalam", cursive;
                             color: $menu3-color-text ;
+                            padding-top: 2vh;
+                            font-size: 2rem !important;
                         }
                     }
                     .menu:nth-child(4){
                         background-color: $menu4-background;
                         color: $menu4-color-text ;
-                        a{
-                            text-decoration: none;
+                        h2{
+                            font-family: "Alex Brush", cursive;
+                            background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 1.8rem;
+                        }
+                        h1{
+                            font-family: "Kalam", cursive;
                             color: $menu4-color-text ;
+                            padding-top: 2vh;
+                            font-size: 2rem !important;
                         }
                     }
                 }
+
+
                 .comingsoon{
                     display: flex;
                     width: 30%;
                     margin: 0 auto;
+                    // height: 5%;
                     
                     // margin-top: 2.5%;
                     a{
                         background-color: $primary-color ;
                         display: block;
                         width: 100%;
-                        
+                        height: 6vh;
                         color: $secondary-color ;
                         text-decoration: none;
                         text-align: center;
-                        border-radius: 0.5em;
+                        border-radius: 10px;
                         font-size: 1.5em;
-                        line-height: 2rem;
-                        margin: 0 auto;
+                        line-height: 2.5rem;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        
                     }
                 }
                 
             }
         }
-
+        footer{
+            background-color: $primary-color ;
+            
+            height: 8%;
+        
+            .container{
+                height: 100%;
+                width: 90%;
+                margin: 0 auto;
+                
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                    a{
+                        font-size: 1.4em;
+                        line-height: 0.5em;
+                        color: $secondary-color ;
+                        font-family: 'Montserrat', sans-serif;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            
+        }
     }
 }
 
+/*  ============  Media query   ================ */
+
+
+
+
+
+
+
+/* On the screens, when the window width is at most 768px for the smartphone */
+@media screen and ( min-width : 100px) and ( max-width : 767px){
+body{
+    #app{
+        header{
+            height: 7%;
+            .container{
+                section{
+                    a{
+                        h1{
+                            font-size: 2em;
+                            line-height: 1.6em;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            .container{
+                padding: 0 5%;
+                .menus{
+                    margin-left: 0;
+                    flex-direction: column;
+                    .menu{
+                        width: auto;
+                        height: 30em;
+                    }
+                }
+                .comingsoon{
+                    width: 70%;
+                }
+            }
+
+        }
+        footer{
+            height: 8%;
+            .container{
+                div{
+                    a{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+    }
+}
+}
+
+
+/* On the screens, when the window width is between 769px and at most 991px for the tablet */
+@media screen and ( min-width : 768px) and ( max-width : 1024px){
+    body{
+        #app{
+            header{
+                height: 7%;
+                .container{
+                    section{
+                        a{
+                            h1{
+                                line-height: 1.8em;
+                            }
+                        }
+                    }
+                }
+            }
+            main{
+                .container{
+                    .menus{
+                        margin-left: 0;
+                        .menu{
+                            width: 45%;
+                            height: 34em;
+                        }
+                        
+                    }
+                    .comingsoon{
+                        width: 50%;
+                        a{
+                            height: 4vh;
+                            line-height: 2.5rem;
+                            font-size: 2em;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+    
+            }
+            footer{
+                height: 8%;
+                .container{
+                    div{
+                        a{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

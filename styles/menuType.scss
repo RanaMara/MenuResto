@@ -1,0 +1,393 @@
+$primary-color : #579c86;
+$secondary-color : #f9cb47;
+$menu1-background :#fadfdb;
+$menu1-color-text : #3c1218;
+$menu2-background : #fdf5fe;
+$menu2-color-text : #c77430;
+$menu3-background : #f9f9f9;
+$menu3-color-text : #2386f6;
+$menu4-background : #fdfffd;
+$menu4-color-text : #72bf56;
+
+.mainMenu{
+    flex-grow:1;
+    max-height: 85%;
+    overflow-y: scroll;
+    padding: 2.5% 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding:0 10%;
+        align-items: center;
+        .menuName{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3%;
+            h3{
+                
+                font-weight: bold;
+                font-size: 1.6rem;
+                display: inline;
+                line-height: 20px;
+                color: black;
+                text-align: center;
+            }
+        }
+        .menuContent{
+            width: 100%;
+            // height: 75%;
+            // overflow:scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+            .title{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1.5em;
+                h1{
+                    display: block;
+                    font-size: 2.5rem;
+                    line-height: 0rem;
+                    font-weight: normal;
+                    margin-bottom: 5em;
+                    text-align: center;
+                }
+            }
+            .menuSections{
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 5%;
+                padding-bottom: 0;
+               margin: 1% auto;
+               margin-bottom: 0;
+
+                // overflow: scroll;
+                .menuSection{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 1.5em;
+                    line-height: 1rem;
+                    .category{
+                        width: 100%;
+                        height: 10%;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 1em;
+                        justify-content: space-between;
+                        img{
+                            // width: 35%;
+                            width: 25vw;
+                            height: 1vw;
+                            margin: auto;
+                            
+                        }
+                        .rightLine{
+                            transform: rotate(180deg);
+                            width: 25vw;
+                            height: 1vw;
+                            margin: auto;
+                        }
+                        span{
+                            // width: 30%;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .meals{
+                        width: 90%;
+                        height: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        line-height: 3rem;
+                        .meal{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            font-size: 1rem;
+                            line-height: 2rem;
+                            margin-bottom: 1em;
+                        }
+
+                    }
+                }
+            }
+            .menuNameBottom{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                padding-bottom: 3rem;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    padding-left: 1%;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+.menuContent1{
+    @extend .menuContent;
+    i{
+        color: #ee5860 ;
+        justify-content: center;
+        font-size: 4em;
+        margin-top: 1rem;
+        &:before {
+            background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+    }
+    }
+    background-color: $menu1-background;
+    color : $menu1-color-text ;
+    .title{
+        h1{
+            color: $menu1-color-text ;
+            font-family: "Devonshire", cursive;
+            margin-top: 1em;
+        }
+    }
+    .menuSections{
+        color: $menu1-color-text;
+        .menuSection{
+            font-family: "Courgette", cursive;
+            .category{
+                img{
+                    // width: 29vw;
+                    // height: 1vw;
+                    // margin: auto;
+                }
+                span{
+                    
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.menuContent2{
+    @extend .menuContent;
+    background-color: $menu2-background;
+    color : $menu2-color-text;
+    .title{
+        font-family: "Croissant One", cursive;
+        background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, #905BFD);
+        -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+        h1{
+            // color: $menu2-color-text;
+            margin-top: 2em;
+        }
+    }
+    .menuSections{
+        font-family: 'Courgette', cursive;
+        color: $menu2-color-text;
+        .menuSection:nth-child(1){
+            color: $menu2-color-text;
+        }
+        .menuSection:nth-child(2){
+            color: #a56799;
+        }
+        .menuSection:nth-child(3){
+            color: #6e4ccc;
+        }
+    }
+
+}
+
+.menuContent3{
+    @extend .menuContent;
+    background-color: $menu3-background;
+    color : $menu3-color-text;
+    .title{
+        font-family: "Alex Brush", cursive;
+         background: -webkit-linear-gradient(360deg, #0e0eac, #67aef1);
+        -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         
+        h1{
+            // color: $menu3-color-text;
+            margin-top: 2em;
+        }
+    }
+    .menuSections{
+        font-family: 'Courgette', cursive;
+        color: #000000;
+    }
+}
+
+.menuContent4{
+    @extend .menuContent;
+    background-color: $menu4-background;
+    color : $menu4-color-text;
+    .title{
+        font-family: "Kaushan Script", cursive;
+    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        h1{
+            margin-top: 2em;
+        }
+    }
+    
+    .menuSections{
+        color: #000000;
+        font-family: 'Courgette', cursive;
+    }
+}
+
+/* On the screens, when the window width is at most 768px for the smartphone */
+@media screen and ( min-width : 100px) and ( max-width : 767px){
+    .mainMenu{
+        padding:5% 0;
+        .container{
+            padding: 0 5%;
+            .menuName{
+               
+                h3{
+                    font-size: 1.2rem;
+                    
+                }
+            }
+            .menuContent{
+                
+                .title{
+                    margin-bottom: 1em;
+                    h1{
+                        font-size: 1.4rem; 
+                        margin-bottom: 1em;
+                    }
+                }
+                .menuSections{
+                    
+                    .menuSection{
+                       
+                        .category{
+                           
+                            img{
+                               
+                            }
+                            span{
+                              
+                            }
+    
+                        }
+    
+                        .meals{
+                            
+                            .meal{
+                              flex-direction: column;
+                              align-items: center;
+                              span{
+                                  text-align: center;
+                              }
+                            }
+    
+                        }
+                    }
+                }
+                .menuNameBottom{
+                    margin-left: 2%;
+                    h2{
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+    
+    
+    
+  
+}
+
+
+
+/* On the screens, when the window width is between 769px and at most 991px for the tablet */
+@media screen and ( min-width : 768px) and ( max-width : 1024px){    .mainMenu{
+        
+    .container{
+       
+        .menuName{
+           
+            h3{
+               
+                
+            }
+        }
+        .menuContent{
+            
+            .title{
+               
+                h1{
+                    
+                }
+            }
+            .menuSections{
+                
+                .menuSection{
+                   
+                    .category{
+                       
+                        img{
+                           
+                        }
+                        span{
+                          
+                        }
+
+                    }
+
+                    .meals{
+                        
+                        .meal{
+                          
+                          span{
+                             
+                          }
+                        }
+
+                    }
+                }
+            }
+            .menuNameBottom{
+                
+                h2{
+                    
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+}
