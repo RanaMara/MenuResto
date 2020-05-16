@@ -169,11 +169,12 @@ body{
                         background-color: $menu4-background;
                         color: $menu4-color-text ;
                         h2{
-                            font-family: "Alex Brush", cursive;
+                            // font-family: "Alex Brush", cursive;
                             background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-                            font-size: 1.8rem;
+                            font-size: 1.6rem;
+                            font-weight: normal;
                         }
                         h1{
                             font-family: "Kalam", cursive;

@@ -222,11 +222,11 @@ body #app main section .menus .menu:nth-child(4) {
 }
 
 body #app main section .menus .menu:nth-child(4) h2 {
-  font-family: "Alex Brush", cursive;
   background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
 body #app main section .menus .menu:nth-child(4) h1 {

@@ -156,6 +156,32 @@
 
 .mainMenu .container .menuContent .menuSections .menuSection .category span, .mainMenu .container .menuContent1 .menuSections .menuSection .category span, .mainMenu .container .menuContent2 .menuSections .menuSection .category span, .mainMenu .container .menuContent3 .menuSections .menuSection .category span, .mainMenu .container .menuContent4 .menuSections .menuSection .category span {
   text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category span::after, .mainMenu .container .menuContent1 .menuSections .menuSection .category span::after, .mainMenu .container .menuContent2 .menuSections .menuSection .category span::after, .mainMenu .container .menuContent3 .menuSections .menuSection .category span::after, .mainMenu .container .menuContent4 .menuSections .menuSection .category span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.mainMenu .container .menuContent .menuSections .menuSection .category span:hover::after, .mainMenu .container .menuContent1 .menuSections .menuSection .category span:hover::after, .mainMenu .container .menuContent2 .menuSections .menuSection .category span:hover::after, .mainMenu .container .menuContent3 .menuSections .menuSection .category span:hover::after, .mainMenu .container .menuContent4 .menuSections .menuSection .category span:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .mainMenu .container .menuContent .menuSections .menuSection .meals, .mainMenu .container .menuContent1 .menuSections .menuSection .meals, .mainMenu .container .menuContent2 .menuSections .menuSection .meals, .mainMenu .container .menuContent3 .menuSections .menuSection .meals, .mainMenu .container .menuContent4 .menuSections .menuSection .meals {
@@ -250,6 +276,10 @@
   text-align: center;
 }
 
+.menuContent1 .menuSections .menuSection .category span::after {
+  background-color: #3c1218;
+}
+
 .menuContent2 {
   background-color: #fdf5fe;
   color: #c77430;
@@ -275,12 +305,24 @@
   color: #c77430;
 }
 
+.menuContent2 .menuSections .menuSection:nth-child(1) .category span::after {
+  background-color: #c77430;
+}
+
 .menuContent2 .menuSections .menuSection:nth-child(2) {
   color: #a56799;
 }
 
+.menuContent2 .menuSections .menuSection:nth-child(2) .category span::after {
+  background-color: #a56799;
+}
+
 .menuContent2 .menuSections .menuSection:nth-child(3) {
   color: #6e4ccc;
+}
+
+.menuContent2 .menuSections .menuSection:nth-child(3) .category span::after {
+  background-color: #6e4ccc;
 }
 
 .menuContent3 {
@@ -304,6 +346,18 @@
   color: #000000;
 }
 
+.menuContent3 .menuSections .menuSection:nth-child(1) .category span::after {
+  background-color: #213bd4;
+}
+
+.menuContent3 .menuSections .menuSection:nth-child(2) .category span::after {
+  background-color: #0870f3;
+}
+
+.menuContent3 .menuSections .menuSection:nth-child(3) .category span::after {
+  background-color: #359df7;
+}
+
 .menuContent4 {
   background-color: #fdfffd;
   color: #72bf56;
@@ -323,6 +377,10 @@
 .menuContent4 .menuSections {
   color: #000000;
   font-family: 'Courgette', cursive;
+}
+
+.menuContent4 .menuSections .category span::after {
+  background-color: #479c2c;
 }
 
 /* On the screens, when the window width is at most 768px for the smartphone */

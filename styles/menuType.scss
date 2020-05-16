@@ -105,6 +105,23 @@ $menu4-color-text : #72bf56;
                         span{
                             // width: 30%;
                             text-align: center;
+                            display:inline-block;
+                            position:relative;
+                        }
+                        span::after{
+                            content:'';
+                            position:absolute;
+                            width:100%;
+                            transform:scaleX(0);
+                            height:2px;
+                            bottom:0;
+                            left:0;
+                            transform-origin:bottom right;
+                            transition:transform 0.25s ease-out;
+                        }
+                        span:hover::after{
+                            transform:scaleX(1);
+                            transform-origin:bottom left;
                         }
 
                     }
@@ -185,6 +202,9 @@ $menu4-color-text : #72bf56;
                     font-weight: bold;
                     text-align: center;
                 }
+                span::after{
+                    background-color : $menu1-color-text;
+                }
             }
         }
     }
@@ -209,12 +229,30 @@ $menu4-color-text : #72bf56;
         color: $menu2-color-text;
         .menuSection:nth-child(1){
             color: $menu2-color-text;
+            .category{
+                span{}
+                span::after{
+                    background-color: $menu2-color-text;
+                }
+            }
         }
         .menuSection:nth-child(2){
             color: #a56799;
+            .category{
+                span{}
+                span::after{
+                    background-color: #a56799;
+                }
+            }
         }
         .menuSection:nth-child(3){
             color: #6e4ccc;
+            .category{
+                span{}
+                span::after{
+                    background-color: #6e4ccc;
+                }
+            }
         }
     }
 
@@ -238,6 +276,31 @@ $menu4-color-text : #72bf56;
     .menuSections{
         font-family: 'Courgette', cursive;
         color: #000000;
+        .menuSection:nth-child(1){
+            .category{
+                span{}
+                span::after{
+                    background-color: #213bd4;
+                }
+            }
+        }
+        .menuSection:nth-child(2){
+            .category{
+                span{}
+                span::after{
+                    background-color: #0870f3;
+                }
+            }
+        }
+        .menuSection:nth-child(3){
+            .category{
+                span{}
+                span::after{
+                    background-color: #359df7;
+                }
+            }
+        }
+        
     }
 }
 
@@ -258,6 +321,12 @@ $menu4-color-text : #72bf56;
     .menuSections{
         color: #000000;
         font-family: 'Courgette', cursive;
+        .category{
+            span{}
+            span::after{
+                background-color: #479c2c;
+            }
+        }
     }
 }
 
