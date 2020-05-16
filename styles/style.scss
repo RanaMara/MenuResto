@@ -78,15 +78,25 @@ body{
                     width: 100%;
                     margin-left: 24%;
                     .menu{
+                        border:4px solid #ededed;
+                        display: flex;
+                        align-items: center;
+                        width: 35%;
+                        height: 35em;
+                        margin: 1em;
+                       .zoom{
+                        width: 75%;
+                        height: 75%;
+                        margin: auto;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        border:4px solid #ededed;
                         text-decoration: none;
-                        width: 35%;
-                        height: 35em;
+                        transition: transform 1000ms ease-in-out;
+                        overflow: hidden;
+                        
                         // padding: 2.5% 0;
-                        margin: 1em;
+                        
                         
                         // border: 1px solid black;
                         text-align: center;
@@ -98,10 +108,15 @@ body{
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; 
                         }}
-                        a{
-                            text-decoration: none;
-                        }
+                       }
+                       .zoom:hover{
+                        transform: scale(1.3);
+                       }
                     }
+                    a{
+                        text-decoration: none;
+                    }
+                   
                     .menu:nth-child(1){
                         background-color: $menu1-background;
                         color: $menu1-color-text ;
@@ -121,7 +136,7 @@ body{
                         color: $menu2-color-text ;
                         h2{
                             font-family: "Croissant One", cursive;
-                            font-size: 1.3rem;
+                            font-size: 1.2rem;
                             background: -webkit-linear-gradient(0deg, #cc6410, #a45be9, #905BFD);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
@@ -217,6 +232,9 @@ body{
                         color: $secondary-color ;
                         font-family: 'Montserrat', sans-serif;
                         text-decoration: none;
+                    }
+                    a:hover{
+                        animation: shake 0.5s; 
                     }
                 }
                 
@@ -327,6 +345,7 @@ body{
                 .container{
                     div{
                         a{
+                            
                             font-size: 2em;
                         }
                     }
