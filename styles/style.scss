@@ -25,40 +25,36 @@ body{
     font-size: 14px;
     line-height: 20px;
     color: $secondary-color ;
-
     #app{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
-/*    HEADER  */
+
+        /* HEADER */
         header{
             background-color: $primary-color ;
             height: 10%;
             .container{
                 width: 100%;
                 height: 100%;
-                section{
-                    display: flex;
-                    align-items: center;
+                display: flex;
+                align-items: center;
+                a{
                     margin: 1% auto;
-                    justify-content: center;
-                        
-                        a{
-                            color: $secondary-color;
-                            text-decoration: none;
-                            h1{
-                                letter-spacing: -3px;
-                                line-height: 1em;
-                                font-weight: 500;
-                                font-size: 2.8em;
-                                font-family: "Roboto", sans-serif;}
-                        }
-                    
+                    color: $secondary-color;
+                    text-decoration: none;
+                    letter-spacing: -3px;
+                    line-height: 1em;
+                    font-weight: 500;
+                    font-size: 2.8em;
+                    font-family: "Roboto", sans-serif;
+                    justify-content: center;    
                 }
             }
         }
-/*          MAIN      */
+
+        /*MAIN*/
         main{
             flex-grow:1;
             max-height: 85%;
@@ -74,7 +70,6 @@ body{
                 .menus{
                     display: flex;
                     flex-wrap: wrap;
-                    // height: 95%;
                     width: 100%;
                     margin-left: 24%;
                     .menu{
@@ -85,30 +80,26 @@ body{
                         height: 35em;
                         margin: 1em;
                        .zoom{
-                        width: 75%;
-                        height: 75%;
-                        margin: auto;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        text-decoration: none;
-                        transition: transform 1000ms ease-in-out;
-                        overflow: hidden;
-                        
-                        // padding: 2.5% 0;
-                        
-                        
-                        // border: 1px solid black;
-                        text-align: center;
-                        line-height: 30px;
-                        i{
+                            width: 75%;
+                            height: 75%;
+                            margin: auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-decoration: none;
+                            transition: transform 1000ms ease-in-out;
+                            overflow: hidden;
+                            text-align: center;
+                            line-height: 30px;
+                            i{
                             font-size: 4em;
                             &:before {
                                 background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; 
-                        }}
-                       }
+                            }
+                            }
+                        }
                        .zoom:hover{
                         transform: scale(1.3);
                        }
@@ -175,6 +166,7 @@ body{
                             -webkit-text-fill-color: transparent;
                             font-size: 1.6rem;
                             font-weight: normal;
+                            font-family: "Kaushan Script", cursive;
                         }
                         h1{
                             font-family: "Kalam", cursive;
@@ -184,15 +176,11 @@ body{
                         }
                     }
                 }
-
-
+                
                 .comingsoon{
                     display: flex;
                     width: 30%;
                     margin: 0 auto;
-                    // height: 5%;
-                    
-                    // margin-top: 2.5%;
                     a{
                         background-color: $primary-color ;
                         display: block;
@@ -242,23 +230,26 @@ body{
                           opacity: .2;
                         }
                     }
-                    
-                    
-                    
                 }
                 
             }
+            .legalNotice{
+                color: #000000;
+                font-family: 'Courgette', cursive;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: lighter;
+            }
         }
+
+        /*FOOTER*/
         footer{
             background-color: $primary-color ;
-            
             height: 8%;
-        
             .container{
                 height: 100%;
                 width: 90%;
                 margin: 0 auto;
-                
                 div{
                     display: flex;
                     justify-content: space-between;
@@ -274,33 +265,30 @@ body{
                     .wiggle a:hover{ 
                         animation: wiggle 150ms infinite;
                         animation-timing-function: linear;   
-                      }
-                      
-                      @keyframes wiggle {
+                    }   
+                    @keyframes wiggle {
                         0% { transform: translate(2px, 0); }
                         50% { transform: translate(-2px, 0); }
                         100% { transform: translate(2px, 0); }
-                      }
+                    }
                 }
-                
             }
-            
         }
     }
 }
+
+
 
 /*  ============  Media query   ================ */
 
 
 
-
-
-
-
 /* On the screens, when the window width is at most 768px for the smartphone */
 @media screen and ( min-width : 100px) and ( max-width : 767px){
-body{
-    #app{
+    body{
+      #app{
+
+        /*  HEADER  */
         header{
             height: 7%;
             .container{
@@ -314,6 +302,9 @@ body{
                 }
             }
         }
+
+
+        /* MAIN */
         main{
             .container{
                 padding: 0 5%;
@@ -331,6 +322,8 @@ body{
             }
 
         }
+
+        /* FOOTER */
         footer{
             height: 8%;
             .container{
@@ -341,9 +334,8 @@ body{
                 }
             }
         }
-
+      }
     }
-}
 }
 
 
@@ -351,6 +343,8 @@ body{
 @media screen and ( min-width : 768px) and ( max-width : 1024px){
     body{
         #app{
+
+            /* HEADER */
             header{
                 height: 7%;
                 .container{
@@ -363,6 +357,8 @@ body{
                     }
                 }
             }
+
+            /* MAIN */ 
             main{
                 .container{
                     .menus{
@@ -383,15 +379,16 @@ body{
                         }
                     }
                 }
-    
             }
+
+
+            /* FOOTER*/
             footer{
                 height: 8%;
                 .container{
                     div{
                         a{
-                            
-                            font-size: 2em;
+                        font-size: 2em;
                         }
                     }
                 }

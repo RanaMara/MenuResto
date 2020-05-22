@@ -9,6 +9,7 @@ $menu3-color-text : #2386f6;
 $menu4-background : #fdfffd;
 $menu4-color-text : #72bf56;
 
+
 .mainMenu{
     flex-grow:1;
     max-height: 85%;
@@ -28,8 +29,7 @@ $menu4-color-text : #72bf56;
             flex-direction: column;
             align-items: center;
             margin-bottom: 3%;
-            h3{
-                
+            h3{ 
                 font-weight: bold;
                 font-size: 1.6rem;
                 display: inline;
@@ -40,8 +40,6 @@ $menu4-color-text : #72bf56;
         }
         .menuContent{
             width: 100%;
-            // height: 75%;
-            // overflow:scroll;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -70,10 +68,8 @@ $menu4-color-text : #72bf56;
                 align-items: center;
                 padding: 5%;
                 padding-bottom: 0;
-               margin: 1% auto;
-               margin-bottom: 0;
-
-                // overflow: scroll;
+                margin: 1% auto;
+                margin-bottom: 0;
                 .menuSection{
                     width: 100%;
                     height: 50%;
@@ -90,11 +86,9 @@ $menu4-color-text : #72bf56;
                         margin-bottom: 1em;
                         justify-content: space-between;
                         img{
-                            // width: 35%;
                             width: 25vw;
                             height: 1vw;
                             margin: auto;
-                            
                         }
                         .rightLine{
                             transform: rotate(180deg);
@@ -103,7 +97,6 @@ $menu4-color-text : #72bf56;
                             margin: auto;
                         }
                         span{
-                            // width: 30%;
                             text-align: center;
                             display:inline-block;
                             position:relative;
@@ -123,9 +116,7 @@ $menu4-color-text : #72bf56;
                             transform:scaleX(1);
                             transform-origin:bottom left;
                         }
-
                     }
-
                     .meals{
                         width: 90%;
                         height: 90%;
@@ -142,7 +133,6 @@ $menu4-color-text : #72bf56;
                             line-height: 2rem;
                             margin-bottom: 1em;
                         }
-
                     }
                 }
             }
@@ -156,16 +146,16 @@ $menu4-color-text : #72bf56;
                 h2{
                     padding-left: 1%;
                 }
-
             }
         }
     }
 }
 
-
-
+/* CSS for Menu "La note enchantée "*/
 .menuContent1{
     @extend .menuContent;
+    background-color: $menu1-background;
+    color : $menu1-color-text ;
     i{
         color: #ee5860 ;
         justify-content: center;
@@ -175,10 +165,8 @@ $menu4-color-text : #72bf56;
             background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; 
+        }
     }
-    }
-    background-color: $menu1-background;
-    color : $menu1-color-text ;
     .title{
         h1{
             color: $menu1-color-text ;
@@ -191,13 +179,7 @@ $menu4-color-text : #72bf56;
         .menuSection{
             font-family: "Courgette", cursive;
             .category{
-                img{
-                    // width: 29vw;
-                    // height: 1vw;
-                    // margin: auto;
-                }
-                span{
-                    
+                span{ 
                     font-size: 1.3rem;
                     font-weight: bold;
                     text-align: center;
@@ -210,6 +192,8 @@ $menu4-color-text : #72bf56;
     }
 }
 
+
+/* CSS for Menu "Le chic à la française "*/
 .menuContent2{
     @extend .menuContent;
     background-color: $menu2-background;
@@ -220,7 +204,6 @@ $menu4-color-text : #72bf56;
         -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
         h1{
-            // color: $menu2-color-text;
             margin-top: 2em;
         }
     }
@@ -230,7 +213,6 @@ $menu4-color-text : #72bf56;
         .menuSection:nth-child(1){
             color: $menu2-color-text;
             .category{
-                span{}
                 span::after{
                     background-color: $menu2-color-text;
                 }
@@ -239,7 +221,6 @@ $menu4-color-text : #72bf56;
         .menuSection:nth-child(2){
             color: #a56799;
             .category{
-                span{}
                 span::after{
                     background-color: #a56799;
                 }
@@ -248,16 +229,16 @@ $menu4-color-text : #72bf56;
         .menuSection:nth-child(3){
             color: #6e4ccc;
             .category{
-                span{}
                 span::after{
                     background-color: #6e4ccc;
                 }
             }
         }
     }
-
 }
 
+
+/* CSS for Menu "Le délice des papilles "*/
 .menuContent3{
     @extend .menuContent;
     background-color: $menu3-background;
@@ -266,10 +247,8 @@ $menu4-color-text : #72bf56;
         font-family: "Alex Brush", cursive;
          background: -webkit-linear-gradient(360deg, #0e0eac, #67aef1);
         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         
+         -webkit-text-fill-color: transparent; 
         h1{
-            // color: $menu3-color-text;
             margin-top: 2em;
         }
     }
@@ -278,7 +257,6 @@ $menu4-color-text : #72bf56;
         color: #000000;
         .menuSection:nth-child(1){
             .category{
-                span{}
                 span::after{
                     background-color: #213bd4;
                 }
@@ -286,7 +264,6 @@ $menu4-color-text : #72bf56;
         }
         .menuSection:nth-child(2){
             .category{
-                span{}
                 span::after{
                     background-color: #0870f3;
                 }
@@ -294,41 +271,40 @@ $menu4-color-text : #72bf56;
         }
         .menuSection:nth-child(3){
             .category{
-                span{}
                 span::after{
                     background-color: #359df7;
                 }
             }
         }
-        
     }
 }
 
+/* CSS for Menu "La palette du goût "*/
 .menuContent4{
     @extend .menuContent;
     background-color: $menu4-background;
     color : $menu4-color-text;
     .title{
         font-family: "Kaushan Script", cursive;
-    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         h1{
-            margin-top: 2em;
+            margin-top: 1em;
         }
     }
-    
     .menuSections{
         color: #000000;
         font-family: 'Courgette', cursive;
         .category{
-            span{}
             span::after{
                 background-color: #479c2c;
             }
         }
     }
 }
+
+/*  ============  Media query   ================ */
 
 /* On the screens, when the window width is at most 768px for the smartphone */
 @media screen and ( min-width : 100px) and ( max-width : 767px){
@@ -337,14 +313,11 @@ $menu4-color-text : #72bf56;
         .container{
             padding: 0 5%;
             .menuName{
-               
-                h3{
+               h3{
                     font-size: 1.2rem;
-                    
                 }
             }
             .menuContent{
-                
                 .title{
                     margin-bottom: 1em;
                     h1{
@@ -353,20 +326,7 @@ $menu4-color-text : #72bf56;
                     }
                 }
                 .menuSections{
-                    
                     .menuSection{
-                       
-                        .category{
-                           
-                            img{
-                               
-                            }
-                            span{
-                              
-                            }
-    
-                        }
-    
                         .meals{
                             
                             .meal{
@@ -376,87 +336,13 @@ $menu4-color-text : #72bf56;
                                   text-align: center;
                               }
                             }
-    
                         }
                     }
                 }
                 .menuNameBottom{
                     margin-left: 2%;
-                    h2{
-                        
-                    }
-    
                 }
             }
         }
     }
-    
-    
-    
-  
-}
-
-
-
-/* On the screens, when the window width is between 769px and at most 991px for the tablet */
-@media screen and ( min-width : 768px) and ( max-width : 1024px){    .mainMenu{
-        
-    .container{
-       
-        .menuName{
-           
-            h3{
-               
-                
-            }
-        }
-        .menuContent{
-            
-            .title{
-               
-                h1{
-                    
-                }
-            }
-            .menuSections{
-                
-                .menuSection{
-                   
-                    .category{
-                       
-                        img{
-                           
-                        }
-                        span{
-                          
-                        }
-
-                    }
-
-                    .meals{
-                        
-                        .meal{
-                          
-                          span{
-                             
-                          }
-                        }
-
-                    }
-                }
-            }
-            .menuNameBottom{
-                
-                h2{
-                    
-                }
-
-            }
-        }
-    }
-}
-
-
-
-
 }

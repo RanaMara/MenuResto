@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mainMenu {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -236,6 +237,7 @@
   padding-left: 1%;
 }
 
+/* CSS for Menu "La note enchantée "*/
 .menuContent1 {
   background-color: #fadfdb;
   color: #3c1218;
@@ -280,6 +282,7 @@
   background-color: #3c1218;
 }
 
+/* CSS for Menu "Le chic à la française "*/
 .menuContent2 {
   background-color: #fdf5fe;
   color: #c77430;
@@ -325,6 +328,7 @@
   background-color: #6e4ccc;
 }
 
+/* CSS for Menu "Le délice des papilles "*/
 .menuContent3 {
   background-color: #f9f9f9;
   color: #2386f6;
@@ -358,6 +362,7 @@
   background-color: #359df7;
 }
 
+/* CSS for Menu "La palette du goût "*/
 .menuContent4 {
   background-color: #fdfffd;
   color: #72bf56;
@@ -371,7 +376,7 @@
 }
 
 .menuContent4 .title h1 {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .menuContent4 .menuSections {
@@ -383,6 +388,7 @@
   background-color: #479c2c;
 }
 
+/*  ============  Media query   ================ */
 /* On the screens, when the window width is at most 768px for the smartphone */
 @media screen and (min-width: 100px) and (max-width: 767px) {
   .mainMenu {
@@ -417,6 +423,4 @@
     margin-left: 2%;
   }
 }
-
-/* On the screens, when the window width is between 769px and at most 991px for the tablet */
 /*# sourceMappingURL=menuType.css.map */
